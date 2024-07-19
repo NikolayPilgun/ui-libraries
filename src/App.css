@@ -1,0 +1,15 @@
+/* App.css */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Минимальная высота 100% высоты окна браузера */
+	background-color: #f0f0f0; /* Фоновый цвет контейнера */
+	border-radius: 10px; /* Скругленные углы контейнера */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}

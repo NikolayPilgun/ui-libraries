@@ -1,0 +1,11 @@
+.footer {
+	background-color: #f8f9fa; /* Фоновый цвет заголовка и подвала */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.footer p {
+	text-align: right;
+	margin: 0;
+	color: #333;
+}
