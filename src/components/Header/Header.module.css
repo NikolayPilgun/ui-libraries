@@ -1,13 +1,68 @@
 .header {
-	background-color: #f8f9fa; /* Фоновый цвет заголовка и подвала */
+	background-color: #333; /* Темный фон */
+	color: white;
 	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.header h1 {
-	font-size: 25px;
+.titleContainer {
 	text-align: center;
+}
+
+.title {
 	margin: 0;
-	color: #333;
+	font-size: 2em;
+	color: #e0e0e0; /* Спокойный светлый цвет для заголовка */
+}
+
+.navList {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0; /* Отступ сверху */
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.navList li {
+	margin: 0;
+}
+
+.link {
+	font-size: 1.2em;
+	color: #f0f8ff; /* Контрастный светло-голубой цвет для ссылок */
+	text-decoration: none;
+	padding: 15px 20px;
+	transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+	border-radius: 10px;
+}
+
+.link:hover {
+	transform: scale(1.05) translateY(-2px); /* Добавлено плавное смещение вверх при наведении */
+	color: #b0c4de; /* Более спокойный голубой цвет при наведении */
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Контрастная тень */
+}
+
+.active {
+	transition: text-decoration 0.2s, color 0.2s;
+	color: #32cd32; /* Яркий лайм зеленый цвет для активной ссылки */
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding: 20px 10px;
+	}
+
+	.title {
+		font-size: 1.5em;
+	}
+
+	.link {
+		padding: 10px 15px;
+		font-size: 1em;
+	}
 }

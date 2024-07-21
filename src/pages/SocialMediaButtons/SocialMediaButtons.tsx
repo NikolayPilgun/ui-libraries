@@ -1,13 +1,11 @@
+// src/pages/SocialMediaButtons/SocialMediaButtons.tsx
 import React from "react";
-import withTitlePath from "../HOCwithTitlePath/withTitlePath";
-import styles from "./SocialMediaButtons.module.css";
+
+import withTitlePath from "../../components/HOCwithTitlePath/withTitlePath";
 import SocialMedia1, {
 	SocialMediaLink1,
-} from "./SocialMediaOption_1/SocialMedia1";
-
-interface SocialMediaButtonsProps {
-	title: string;
-}
+} from "../../components/SocialMedia1/SocialMedia1";
+import styles from "./SocialMediaButtons.module.css";
 
 const dataSocialMedia1: SocialMediaLink1[] = [
 	{
@@ -27,18 +25,17 @@ const dataSocialMedia1: SocialMediaLink1[] = [
 	},
 ];
 
-const SocialMediaButtons: React.FC<SocialMediaButtonsProps> = ({ title }) => {
+const SocialMediaButtons: React.FC = () => {
 	const EnhancedSocialMedia1 = withTitlePath(SocialMedia1);
 
 	return (
-		<div className={styles.card}>
-			<h2>{title}</h2>
+		<main className={styles.container}>
 			<EnhancedSocialMedia1
 				title="Social Media Links (Option 1)"
-				path="/components/Content/SocialMediaButtons/SocialMediaOption_1/"
+				path="https://github.com/NikolayPilgun/ui-libraries/tree/main/src/components/Content/SocialMediaButtons/SocialMediaOption_1"
 				dataSocialMedia1={dataSocialMedia1}
 			/>
-		</div>
+		</main>
 	);
 };
 

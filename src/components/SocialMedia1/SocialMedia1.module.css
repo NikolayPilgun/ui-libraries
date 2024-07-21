@@ -23,7 +23,7 @@
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	background-color: white; /* Добавлено для улучшения контраста */
+	background-color: white;
 }
 
 .social a img {
@@ -34,12 +34,7 @@
 
 .social a:hover {
 	outline-offset: 3px;
-	background-color: rgba(
-		83,
-		27,
-		128,
-		0.1
-	); /* Добавлено для улучшения визуального эффекта */
+	background-color: rgba(83, 27, 128, 0.1);
 }
 
 .social a:hover img {
