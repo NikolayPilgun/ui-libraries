@@ -1,3 +1,4 @@
+/* Home.module.css */
 .container {
 	display: flex;
 	flex-direction: column;
@@ -27,6 +28,29 @@
 	color: #666;
 }
 
-.main p {
+.section {
+	margin-bottom: 20px;
+}
+
+.section h2 {
+	font-size: 2em;
+	color: #444;
+}
+
+.section p {
 	margin: 0;
+	padding-bottom: 1em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+ul li strong {
+	color: #222;
 }

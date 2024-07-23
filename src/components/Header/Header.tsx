@@ -8,15 +8,20 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
 	const navLinks = [
-		{ path: "/", label: "Home" },
-		{ path: "socialMediaButtons", label: "Social Media Buttons" },
-		{ path: "newPage", label: "New Page" },
+		{ path: "/", label: "Главная" },
+		{ path: "socialMediaButtons", label: "Кнопки соц. сетей" },
+		{ path: "newPage", label: "Новая страница" },
 	];
 
 	return (
 		<header className={styles.header}>
 			<div className={styles.titleContainer}>
 				<h1 className={styles.title}>{title}</h1>
+			</div>
+			<div className={styles.subtitleContainer}>
+				<h2 className={styles.subtitle}>
+					Демонстрация визуальных эффектов для UI элементов с готовым кодом.
+				</h2>
 			</div>
 			<nav>
 				<ul className={styles.navList}>

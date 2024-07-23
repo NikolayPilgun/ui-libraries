@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 const App: React.FC = () => {
 	return (
 		<div className="app-container">
-			<Header title="UI Components Library" />
+			<Header title="UIEffectsHub" />
 			<main className="main-container">
 				<Outlet />
 			</main>

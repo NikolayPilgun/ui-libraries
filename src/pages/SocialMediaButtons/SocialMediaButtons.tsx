@@ -32,7 +32,7 @@ const SocialMediaButtons: React.FC = () => {
 		<main className={styles.container}>
 			<EnhancedSocialMedia1
 				title="Social Media Links (Option 1)"
-				path="https://github.com/NikolayPilgun/ui-libraries/tree/main/src/components/Content/SocialMediaButtons/SocialMediaOption_1"
+				path="https://github.com/NikolayPilgun/ui-libraries/tree/main/src/components/SocialMedia1"
 				dataSocialMedia1={dataSocialMedia1}
 			/>
 		</main>

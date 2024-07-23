@@ -17,6 +17,17 @@
 	color: #e0e0e0; /* Спокойный светлый цвет для заголовка */
 }
 
+.subtitleContainer {
+	text-align: center;
+	margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+.subtitle {
+	margin: 0;
+	font-size: 1.2em;
+	color: #b0c4de; /* Голубой цвет для подзаголовка */
+}
+
 .navList {
 	list-style: none;
 	padding: 0;
@@ -38,6 +49,7 @@
 	padding: 15px 20px;
 	transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
 	border-radius: 10px;
+	background-color: #444; /* Более темный фон для ссылок */
 }
 
 .link:hover {

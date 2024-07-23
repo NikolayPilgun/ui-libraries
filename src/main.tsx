@@ -3,9 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
 import NewPage from "./pages/NewPage/NewPage"; // Новый компонент
+import Privacy from "./pages/Privacy/Privacy";
 import SocialMediaButtons from "./pages/SocialMediaButtons/SocialMediaButtons";
 
 const router = createBrowserRouter([
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
 			{
 				path: "socialMediaButtons",
 				element: <SocialMediaButtons />,
+			},
+			{
+				path: "about",
+				element: <About />,
+			},
+			{
+				path: "contact",
+				element: <Contact />,
+			},
+			{
+				path: "privacy",
+				element: <Privacy />,
 			},
 			{
 				path: "newPage",

@@ -1,11 +1,62 @@
+/* Footer.module.css */
 .footer {
-	background-color: #f8f9fa; /* Фоновый цвет заголовка и подвала */
+	background-color: #333; /* Общее оформление фона подвала */
+	color: white;
 	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #444;
+	margin-top: 40px; /* Отступ сверху для отделения от основного контента */
 }
-.footer p {
-	text-align: right;
+
+.footerContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.nav {
+	margin-bottom: 15px;
+}
+
+.navList {
+	list-style: none;
+	padding: 0;
 	margin: 0;
-	color: #333;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.navList li {
+	margin: 0;
+}
+
+.link {
+	font-size: 1em;
+	color: #f0f8ff;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.link:hover,
+.link:focus {
+	color: #b0c4de;
+}
+
+.active {
+	color: #32cd32;
+	text-decoration: underline;
+}
+
+.info {
+	font-size: 0.9em;
+	color: #e0e0e0;
+}
+
+.info p {
+	margin: 5px 0;
 }
