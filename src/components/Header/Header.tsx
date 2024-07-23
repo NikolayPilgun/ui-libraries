@@ -11,6 +11,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
 		{ path: "/", label: "Главная" },
 		{ path: "socialMediaButtons", label: "Кнопки соц. сетей" },
 		{ path: "textEffects", label: "Текст эффекты" },
+		{ path: "menuIcon", label: "Значок меню" },
 	];
 
 	return (

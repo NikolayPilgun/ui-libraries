@@ -5,7 +5,7 @@ import TextEffectGradient1, {
 } from "../../components/TextEffects/TextEffectGradient1/TextEffectGradient1";
 import styles from "./TextEffects.module.css";
 
-const HELLO_WORLD_TEXT = "Hello World";
+const DATA_TEXT = "Hello World";
 
 const TextEffects: React.FC = () => {
 	const EnhancedTextEffectGradient1 =
@@ -15,10 +15,10 @@ const TextEffects: React.FC = () => {
 		<main className={styles.container}>
 			<article className={styles.card}>
 				<EnhancedTextEffectGradient1
-					title="TextEffectGradient (Option 1)"
-					path="https://github.com/NikolayPilgun/ui-libraries/tree/main/src/components/SocialMediaButtons/SocialMedia1"
+					title="Text Effect Gradient (Option 1)"
+					path="https://github.com/NikolayPilgun/ui-libraries/tree/main/src/components/TextEffects/TextEffectGradient1"
 					description="Текст с градиентной заливкой через фон и прозрачностью."
-					text={HELLO_WORLD_TEXT}
+					text={DATA_TEXT}
 				/>
 			</article>
 		</main>

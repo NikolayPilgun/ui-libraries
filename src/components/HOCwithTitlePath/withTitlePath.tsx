@@ -9,8 +9,13 @@ export interface WithTitlePathProps {
 
 const withTitlePath = <P extends object>(
 	Component: React.ComponentType<P>
-): React.FC<P & WithTitlePathProps> => {
-	return ({ title, path, description, ...rest }: WithTitlePathProps & P) => (
+): React.FC<WithTitlePathProps & Partial<P>> => {
+	return ({
+		title,
+		path,
+		description,
+		...rest
+	}: WithTitlePathProps & Partial<P>) => (
 		<div className={styles.card}>
 			<h2 className={styles.title}>{title}</h2>
 			<a

@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
+import MenuIcon from "./pages/MenuIcon/MenuIcon";
 import Privacy from "./pages/Privacy/Privacy";
 import SocialMediaButtons from "./pages/SocialMediaButtons/SocialMediaButtons";
 import TextEffects from "./pages/TextEffects/TextEffects";
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
 			{
 				path: "textEffects",
 				element: <TextEffects />,
+			},
+			{
+				path: "menuIcon",
+				element: <MenuIcon />,
 			},
 		],
 	},
