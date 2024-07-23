@@ -7,9 +7,9 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
-import NewPage from "./pages/NewPage/NewPage"; // Новый компонент
 import Privacy from "./pages/Privacy/Privacy";
 import SocialMediaButtons from "./pages/SocialMediaButtons/SocialMediaButtons";
+import TextEffects from "./pages/TextEffects/TextEffects";
 
 const router = createBrowserRouter([
 	{
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
 				element: <Privacy />,
 			},
 			{
-				path: "newPage",
-				element: <NewPage />, // Новый маршрут
+				path: "textEffects",
+				element: <TextEffects />,
 			},
 		],
 	},

@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
 	const navLinks = [
 		{ path: "/", label: "Главная" },
 		{ path: "socialMediaButtons", label: "Кнопки соц. сетей" },
-		{ path: "newPage", label: "Новая страница" },
+		{ path: "textEffects", label: "Текст эффекты" },
 	];
 
 	return (

@@ -7,7 +7,7 @@ export interface SocialMediaLink1 {
 	alt: string;
 }
 
-interface SocialMedia1Props {
+export interface SocialMedia1Props {
 	dataSocialMedia1: SocialMediaLink1[];
 }
 
